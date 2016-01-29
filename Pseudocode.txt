@@ -1,3 +1,5 @@
+
+
 TYPE vector IS STRUCTURE DEFINED
 	x IS DOUBLE Var
 	y IS DOUBLE Var
