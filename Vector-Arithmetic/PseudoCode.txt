@@ -1,0 +1,109 @@
+TYPE vector IS STRUCTURE DEFINED
+	x IS FLOAT Var
+	y IS FLOAT Var
+	n IS STRING Var
+END vector TYPE
+
+FUNCTION main:
+Start
+Initialize variable of type Vector “vec1” = {0, 0, “Vector 1”}
+Initialize variable of type Vector “vec2” = {0, 0, “Vector 2”}
+Initialize variable of type Vector “sum”
+Initialize variable of type Vector “differ”
+Initialize variable of type Vector “s_mult”
+
+Initialize constant variable of type int “k” = 10
+	Initialize variable of type int “x”
+Initialize variable of type Boolean “QUIT”
+
+LOOP While (QUIT == FALSE)
+	Start
+		Display message “Welcome to our Vector Math program!”
+		Display message “These are your current vector values: “
+		CALL print_vector(vec1)
+		CALL print_vector(vec2)
+		Display message “Please enter the number of the operation you would like to
+				perform”
+		Display message “
+Enter new vector values
+Add
+Subtract
+Scalar Multiplication
+Scalar Product
+Magnitude
+Exit program”
+Prompt user to enter a value for x
+
+LOOP While (x < 0 OR x > 6)
+	Start
+			Display message “You entered an invalid option!”
+			Display message “Please re-enter the number of the operation you would
+					Like to perform”
+			Prompt user to enter a value for x
+ENDLOOP
+
+		Switch x
+			Start
+			CASE 1: CALL get_vector(v1)
+				CALL get_vector(v2)
+			CASE 2: CALL calc_sum(v1,  v2, s)
+				Display message “Sum: ”
+				CALL print_vector(s)
+			CASE 3: CALL calc_difference(v1, v2, d)
+				Display message “Difference: “
+				CALL print_vector(d)
+			CASE 4: CALL scalar_mult(v, k, m)
+				Display message “Scalar multiple: “
+				CALL print_vector(m)
+			CASE 5: Display message “Scalar product: “
+Print to screen by CALL scalar_prod(v1, v2)
+			CASE 6: Display message “Magnitude of  “ Name of Vector 1 “:”
+				Print to screen by CALL magnitude(v1)
+			CASE 0: QUIT == TRUE
+			End
+ENDLOOP
+
+End
+
+FUNCTION get_vector (parameters: v)
+Start
+	Display message “Please enter a value for the vector’s first dimension”
+Prompt user to enter a value for member “x”
+Display message “Please enter a value for the vector’s second dimension”
+Prompt user to enter a value for member “y”
+Display message “Please enter the name of the vector”
+Prompt user to enter a value for member “n”
+End
+
+FUNCTION calc_sum (parameters: v1, v2, s)
+Start
+s.x = v1.x + v2.x
+s.y = v1.y + v2.y
+End
+
+FUNCTION print_vector (parameters: v1)
+Start
+Print v1.n “: “ print v1.x “, “ print v1.y
+End
+
+FUNCTION calc_difference (parameters: v1, v2, d)
+Start
+d.x = v1.x – v2.x
+d.y = v1.y – v2.y
+End
+
+FUNCTION scalar_mult (parameters: v, k, m)
+Start
+m.x = k* v.x
+m.y = k* v.y
+End
+
+FUNCTION scalar_prod (parameters: v1, v2)
+Start
+Return (v1.x * v2.x) + (v1.y * v2.y)
+End
+
+FUNCTION magnitude (parameters: v)
+Start
+Return (v1.x^2 + v1.y^2) ^ (1/2)
+End
