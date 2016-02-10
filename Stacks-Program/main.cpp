@@ -2,7 +2,8 @@
 //  main.cpp
 //  Stacks
 //
-//  Created by David  on 2/9/16.
+//  Created by the CIS-277 team on 2/9/16.
+// 
 //  Copyright © 2016 David . All rights reserved.
 //
 
