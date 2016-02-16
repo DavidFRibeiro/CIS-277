@@ -4,16 +4,16 @@
 
 ## Stacks and Evaluation
 
-	1. From Postfix to Infix
-	2. From Infix to Postfix
+1. From Postfix to Infix
+2. From Infix to Postfix
 	
-		You must be able to do this
-		*Using a stack
-		*Manually 
+You must be able to do this
+*Using a stack	
+*Manually 
 
 ## Algorithm Analasys 
 
-	Big O notation
+Big O notation
 
 ##Definitions
 
@@ -27,18 +27,18 @@ ETC.
 
 ## Implementation of Stacks
 
-	* Revising Numbers
-	* Convert from binary to decimal 
-	* Backtracking 
+* Revising Numbers
+* Convert from binary to decimal 
+* Backtracking 
 
 ## Search and Binary Search 
 
-	### Sequential Search 
+### Sequential Search 
 
-		Best Case = O(1)
-		Average Case = O(n/2)
-		Worste Case = O(n)
+Best Case = O(1)
+Average Case = O(n/2)
+Worste Case = O(n)
 
-	### Binary Search 
+### Binary Search 
 
-		Worste Case = log2n
+Worste Case = log2n
