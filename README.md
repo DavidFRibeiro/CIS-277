@@ -11,6 +11,7 @@ Some projects and problems from CIS-277. Feel free to add, edit and post your ow
 
 *  If you had an idea for a side project but ~~are too lazy~~ dont feel like doing all the heavy work, throw it in their and we will try to contribute to it and build something awesome, even if its just an idea that you have.
 
+<<<<<<< HEAD
 #Contribute!
 
 
@@ -29,10 +30,15 @@ Some projects and problems from CIS-277. Feel free to add, edit and post your ow
 6. **Be happy**.
 
 
+=======
+>>>>>>> origin/master
 ### Other Notes
 
 * **Exam-Notes** will hold notes and pre-exam reviews.
 
 
 * When you upload an **Individual Project**, add  `-yourname`to the end so we can easily see who's code belongs to who. 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
