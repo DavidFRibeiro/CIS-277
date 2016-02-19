@@ -33,6 +33,5 @@ Some projects and problems from CIS-277. Feel free to add, edit and post your ow
 * **Exam-Notes** will hold notes and pre-exam reviews.
 
 * When you upload an **Individual Project**, add  `-yourname`to the end so we can easily see who's code belongs to who. 
-<<<<<<< HEAD
 
 
